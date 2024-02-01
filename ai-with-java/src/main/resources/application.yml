@@ -1,0 +1,4 @@
+generativeai:
+  gpt3: 
+    api: https://api.openai.com/v1/chat/completions
+    key: 
