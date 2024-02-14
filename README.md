@@ -1,14 +1,22 @@
 # ai-starter
 Exploration of different possibilities of AI.
 
+High level topics
+1. AI
+2. ML
+3. Deep Learning
+4. Generative AI
+
+# 1. AI
 
 
+# 2. ML
 
 
+# 3. Deep Learning
 
 
-
-# Generative AI
+# 4. Generative AI
 
 ## What is Generative AI
 Generative AI, also known as Generative Artificial Intelligence, refers to a category of artificial intelligence techniques that aim to generate new, original content rather than simply processing and analyzing existing data. Instead of relying solely on pre-existing examples, generative AI models have the ability to create new and unique outputs by learning patterns and structures from training data.  
@@ -68,7 +76,6 @@ It's worth noting that large language models like GPT-3 can exhibit generative c
 ### Sample 3:
  - We are trying to create a travel booking application for our client and want to propose the detailed architecture along with the code for the same, Can you help in generating high level Epics, features and stories followed by architecture and actual code in java using spring boot
 
-
 ## Different tools and its versions
 
 ### ChatGPT
@@ -94,8 +101,10 @@ Open AI Playground vs ChatGPT: https://www.lifewire.com/openai-playground-vs-cha
  - URL: https://bard.google.com/
 
 # References
+ - AI
+   - https://serokell.io/blog/ai-ml-dl-difference   
  - Generative AI
- 	- https://platform.openai.com/examples
- 	- https://platform.openai.com/docs/libraries/community-libraries
-		- https://github.com/TheoKanning/openai-java
- 	- https://firstfinger.in/chatgpt-character-limit/
+   - https://platform.openai.com/examples
+   - https://platform.openai.com/docs/libraries/community-libraries
+     - https://github.com/TheoKanning/openai-java
+   - https://firstfinger.in/chatgpt-character-limit/
