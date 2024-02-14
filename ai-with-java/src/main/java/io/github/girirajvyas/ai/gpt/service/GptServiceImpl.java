@@ -4,21 +4,35 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import io.github.girirajvyas.ai.util.GptUtils;
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 @Service
 public class GptServiceImpl implements GptService {
 
-	@Value("${generativeai.gpt3.api}")
-	private String apiUrl;
+	@Value("${generativeai.gpt3.open-ai.endpoint}")
+	private String endpoint;
 
-	@Value("${generativeai.gpt3.key}")
+	@Value("${generativeai.gpt3.open-ai.key}")
 	private String apiKey;
 
+	@Value("${generativeai.gpt3.open-ai.model}")
+	private String model;
+
+	@Value("${generativeai.gpt3.azure-open-ai.endpoint}")
+	private String azureEndpoint;
+
+	@Value("${generativeai.gpt3.azure-open-ai.key}")
+	private String azureApiKey;
+
+	@Value("${generativeai.gpt3.azure-open-ai.model}")
+	private String azureModel;
+
+	@Override
 	public String getAccounts(String promptText) {
-		String response = GptUtils.sendQuery(promptText, apiUrl, apiKey);
-		log.info(response);
-		return response;
+		return GptUtils.sendQueryToOpenAI(promptText, endpoint, apiKey, model);
+	}
+
+	@Override
+	public String getInterviewQuestions(String promptText) {
+		return GptUtils.sendQueryToAzureOpenAI(promptText, azureEndpoint, azureApiKey, azureModel);
 	}
 }

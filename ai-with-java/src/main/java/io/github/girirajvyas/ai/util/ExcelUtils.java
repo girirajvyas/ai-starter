@@ -64,7 +64,7 @@ public class ExcelUtils {
 		// Process the input and return the response
 		String apiUrl = YamlUtils.getNestedProperty("generativeai.gpt3.api");
 		String apiKey = YamlUtils.getNestedProperty("generativeai.gpt3.key");
-		String output = GptUtils.sendQuery(input, apiUrl, apiKey);
+		String output = GptUtils.sendQueryToOpenAI(input, apiUrl, apiKey, "gpt-3.5-turbo");
 		return output;
 	}
 

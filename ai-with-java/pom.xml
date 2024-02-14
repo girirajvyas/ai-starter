@@ -84,7 +84,13 @@
 		<dependency>
 			<groupId>org.yaml</groupId>
 			<artifactId>snakeyaml</artifactId>
-			<version>1.29</version>
+		</dependency>
+
+		<!-- Weka library -->
+		<dependency>
+			<groupId>nz.ac.waikato.cms.weka</groupId>
+			<artifactId>weka-stable</artifactId>
+			<version>3.8.6</version>
 		</dependency>
 
 	</dependencies>

@@ -1,4 +1,16 @@
 generativeai:
-  gpt3: 
-    api: https://api.openai.com/v1/chat/completions
-    key: 
+  gpt3:
+    open-ai:
+      endpoint: https://api.openai.com/v1/chat/completions
+      key:  
+      model: gpt-3.5-turbo
+    azure-open-ai: 
+      endpoint: https://aoai-engx-hack23.openai.azure.com/openai/deployments/gpt-35-turbo/completions?api-version=2023-07-01-preview
+      key: 
+      model: gpt-35-turbo-16k   
+    
+springdoc:
+  swagger-ui:
+    path: /swagger-ui-custom.html
+  api-docs:
+    path: /api-docs
