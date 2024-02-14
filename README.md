@@ -8,7 +8,18 @@ High level topics
 4. Generative AI
 
 # 1. AI
+**1. Overview of Artificial Intelligence and its applications**
 
+**Overview**  
+Artificial Intelligence (AI) is a branch of computer science that focuses on creating systems capable of performing tasks that would normally require human intelligence. These tasks include learning, reasoning, problem-solving, perception, and language understanding. AI applications span a wide range of industries, including healthcare, finance, gaming, and more.
+
+**Applications of AI:**  
+- **Natural Language Processing (NLP):** Understanding and processing human language.
+- **Computer Vision:** Teaching machines to interpret and understand visual information.
+- **Machine Learning:** Algorithms that enable computers to learn patterns and make predictions.
+- **Speech Recognition:** Converting spoken language into text.
+- **Recommendation Systems:** Suggesting items based on user preferences.
+- **Autonomous Vehicles:** Using AI to enable self-driving cars.
 
 # 2. ML
 
