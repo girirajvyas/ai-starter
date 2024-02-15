@@ -6,6 +6,7 @@ Project for showcasing different usecases of AI with Java
 
 ## Frameworks, Libraries and Tools
 
+### Based on use-case
 **Knowledge-based and Reasoning Systems Libraries Table**
 
 | Library Name | Description | License | Official Website | First Release | Latest Release | Companies Adopting this | Used by | Pros | Cons |
@@ -80,6 +81,21 @@ Note: "Not Available" indicates the data is not publicly available or could not 
 | Meta Numerics | It is a library for advanced scientific computation, including complex numbers, matrices, Advanced Math, and statistics | Microsoft Public License (MS-PL) | [Meta Numerics](http://metanumerics.codeplex.com/) | 2009 | 3.1 (2014) | Not Available | Researchers, Developers | Comprehensive numerics library, Small memory footprint | Rare updates, Small community|
 
 Note: "Not Available" indicates the data is not publicly available or could not be found.
+
+### Equivalent Python libraries in Java 
+
+| Python Library | Python Library Description | Equivalent Java Library | Java Library Description | Production Use Case | Latest version and release date |
+| --- | --- | --- | --- | --- | --- |
+| [TensorFlow](https://www.tensorflow.org/) | An open-source machine learning framework developed by Google. | [DJL](https://djl.ai/) | An open-source library developed by Amazon, is more user-friendly. | Used for creating large-scale, neural networks models. | TensorFlow: 2.8.0 (31 Jan, 2022) DJL: 0.15.0 (Jan 10, 2022) |
+| [Keras](https://keras.io/) | An open-source Python library that provides a convenient way to define and train any machine learning model. | [DL4J](https://deeplearning4j.org/) | A Java library for deep learning. DL4j stands for Deep Learning for Java. | Used in conjunction with neural networks and deep learning models. | Keras: 2.6.0 (Aug 12, 2021) DL4J: 1.0.0-beta7 (Aug, 2020) |
+| [PyTorch](https://pytorch.org/) | A machine learning library developed by Facebook's AI Research lab. | [DJL](https://djl.ai/) | An open-source library developed by Amazon. | Used for applications in computer vision and natural language processing. | PyTorch: 1.10.0 (Oct 19, 2021) DJL: 0.15.0 (Jan 10, 2022) |
+| [Scikit-Learn](https://scikit-learn.org/) | A machine learning library offering simple and efficient tools for data mining and data analysis. | [Weka](https://waikato.github.io/) or [MOA](https://moa.cms.waikato.ac.nz/) | Java software for machine learning, fully integrated with Weka, designed to deal with large-scale machine learning. | Used for data mining, data analysis and prediction modeling. | Scikit-Learn: 1.0.2 (Jan 16, 2022) Weka: 3.8.5 (Nov 27, 2021) MOA: 2019.05.0 (May 14, 2019) |
+| [XGBoost](https://xgboost.readthedocs.io/) | An optimized distributed gradient boosting library. | [XGBoost](https://xgboost.readthedocs.io/) | XGBoost also has a Java wrapper. | Used to improve speed and model performance. | XGBoost: Python wrapper 1.5.0 (Oct 31, 2021) Java wrapper 0.90 (Jan 14, 2020) |
+| [LightGBM](https://lightgbm.readthedocs.io/) | A gradient boosting framework that uses tree-based learning algorithms. | [LightGBM](https://lightgbm.readthedocs.io/) | Like XGBoost, LightGBM also has a java wrapper. | Gradient boosting and higher efficiency models | LightGBM: 3.3.1 (Nov 5, 2021) Java wrapper not separately versioned |
+| [Pandas](https://pandas.pydata.org/) | A library for data manipulation and analysis. | [Tablesaw](https://github.com/jtablesaw/tablesaw) | Java dataframe and data science library. | Data manipulation and analysis | Pandas: 1.4.0 (Dec 31, 2021) Tablesaw: 0.38.3 (Sep 17, 2021) |
+| [NumPy](https://numpy.org/) | A library for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions for these arrays. | [ND4J](https://nd4j.org/) | N-Dimensional Arrays for Java. | Used for scientific computing with Python.| NumPy: 1.22.3 (Dec 30, 2021) ND4J: 1.0.0-beta7 (Aug 30, 2020) |
+| [Matplotlib](https://matplotlib.org/)/[Seaborn](https://seaborn.pydata.org/) | Libraries for data visualization. | [XChart](https://knowm.org/open-source/xchart/)/[JFreeChart](http://www.jfree.org/jfreechart/) | A light-weight and convenient library for plotting data. | Visualizing data in forms of different types of plots. | Matplotlib: 3.5.1 (Dec 18, 2021) Seaborn: 0.11.2 (July 6, 2021) XChart: 3.8.4 (Aug 17, 2021) JFreeChart: 1.5.3 (Dec 31, 2021) |
+| [NLTK (Natural Language Toolkit)](https://www.nltk.org/) | A platform to work with human language data that provides interfaces to over 50 corpora and lexical resources. | [Apache OpenNLP](https://opennlp.apache.org/) or [Stanford NLP](https://nlp.stanford.edu/) | Provides services for sentence detection, tokenization, pos-tagging, chunking and parsing, named entity detection etc. | Text analytics, language processing | NLTK: 3.6.6 (Jan 31, 2022) Apache OpenNLP: 1.9.3 (Dec 31, 2019) Stanford NLP: v4.4.1 (Nov 12, 2021) |
 
 **Tools for AI Development:**  
 - **Apache OpenNLP:** A toolkit for processing natural language text.
