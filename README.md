@@ -119,3 +119,5 @@ Open AI Playground vs ChatGPT: https://www.lifewire.com/openai-playground-vs-cha
    - https://platform.openai.com/docs/libraries/community-libraries
      - https://github.com/TheoKanning/openai-java
    - https://firstfinger.in/chatgpt-character-limit/
+   - Prompt Engineering:
+     - https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api 
