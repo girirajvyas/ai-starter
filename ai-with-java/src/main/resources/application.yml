@@ -1,3 +1,7 @@
+spring:
+  ai:
+    openai.api-key: 
+
 generativeai:
   gpt3:
     open-ai:
