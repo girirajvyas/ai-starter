@@ -1,92 +1,80 @@
 package io.github.girirajvyas.ai.gpt.controller;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.google.gson.Gson;
+import org.springframework.web.multipart.MultipartFile;
 
 import io.github.girirajvyas.ai.gpt.service.GptService;
-import io.github.girirajvyas.ai.model.InputBody;
 import io.github.girirajvyas.ai.model.InterviewModel;
-import io.micrometer.common.util.StringUtils;
+import io.github.girirajvyas.ai.model.OperationtsEnum;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 
+@Tag(name = "Integrating GPT APIs Directly", description = "Demo different use cases of direct search and interview questions")
 @Slf4j
 @RestController
 public class GptController {
-	
-    private final String serviceUrl = "https://aoai-engx-hack23.openai.azure.com/openai/deployments/gpt-35-turbo/completions?api-version=2023-07-01-preview";
-    private final String API_KEY = "";
 
 	@Autowired
 	private GptService gptService;
-	
+
 	@GetMapping("/search")
-	@Operation(summary = "Fetch Account Information")
-	public ResponseEntity<String> getAccounts(
+	@Operation(summary = "Search for data using prompts")
+	public ResponseEntity<String> search(
 			@Parameter(description = "Search Prompt", example = "What is todays date?") String promptText) {
-		String response = gptService.getAccounts(promptText);
+		String response = gptService.searchPrompt(promptText);
 		return new ResponseEntity<String>(response, HttpStatus.OK);
 	}
-	
+
 	@PostMapping("/interview")
-    @Operation(summary = "Helps in getting interview questions for the preparation")
-    public ResponseEntity<Object> interview(@RequestBody InterviewModel interviewModel) throws IOException, InterruptedException {
+	@Operation(summary = "Helps in getting interview questions for the preparation")
+	public ResponseEntity<String> interview(@RequestBody InterviewModel interviewModel)
+			throws IOException, InterruptedException {
 		// Prompt Creation
-        String prompt = "As a " + interviewModel.getRole() + "  Having experience of: " + interviewModel.getYearOfExperience() + "  " +
-                "Can you suggest the interview questions focused on interview?";
-        log.info("searching " + prompt);
-        
-        // Rest Call
-        HttpClient client = HttpClient.newHttpClient();
-        String body = new Gson().toJson(InputBody.builder()
-                .maxTokens(1605l).
-                temperature(0.3f)
-                .prompt(prompt)
-                .model("gpt-35-turbo").build());
-        HttpRequest request = HttpRequest.newBuilder()
-                .header("API-KEY", API_KEY)
-                .uri(URI.create(serviceUrl))
-                .POST(HttpRequest.BodyPublishers.ofString(body))
-                .build();
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+		String prompt = "As a " + interviewModel.getRole() + "  Having experience of: "
+				+ interviewModel.getYearOfExperience() + "  "
+				+ "Can you suggest the interview questions focused on interview?";
+		String response = gptService.getInterviewQuestions(prompt);
+		return new ResponseEntity<String>(response, HttpStatus.OK);
+	}
 
-        // Response Mapping
-        JSONObject jsonObject = new JSONObject(response.body());
-        log.info(jsonObject.toString());
-        
-        int code;
-        String responseText="";
-        
-        if(StringUtils.isNotBlank(jsonObject.optString("error"))) {
-        	// Error Scenario
-        	code =  jsonObject.getJSONObject("error").getInt("code");
-        	responseText = (String) jsonObject.getJSONObject("error").get("message");
-        } else {
-        	// Success Scenario
-        	code = response.statusCode();
-        	JSONArray peopleArray = jsonObject.getJSONArray("choices");
-            responseText = peopleArray.getJSONObject(0).getString("text");	
-        }    
-        
-        return ResponseEntity.status(code)
-                .header(response.headers().toString())
-                .body(responseText);
-    }
+	@RequestMapping(path = "/file-operations/", method = RequestMethod.POST, consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+	@Operation(summary = "Find Sentiment or Summary of provided file for easy consumption")
+	public ResponseEntity<String> fileOperations(@RequestParam("file") MultipartFile file,
+			@RequestParam OperationtsEnum operationtsEnum) throws IOException {
+		String query = OperationtsEnum.getSearchText(operationtsEnum.name());
+		InputStream initialStream = file.getInputStream();
 
+		StringBuilder resultStringBuilder = new StringBuilder();
+		try (BufferedReader br = new BufferedReader(new InputStreamReader(initialStream))) {
+			String line;
+			while ((line = br.readLine()) != null) {
+				resultStringBuilder.append(line).append("\n");
+			}
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+		String data = resultStringBuilder.toString();
+		String prompt = query + data;
+		log.info("final prompt: ",prompt);
+		
+		String response = gptService.searchPrompt(prompt);
+		return new ResponseEntity<String>(response, HttpStatus.OK);
+	}
 }

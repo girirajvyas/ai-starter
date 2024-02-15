@@ -133,3 +133,7 @@ I hope this helps you get started with Excel read/write operations in Java! Let 
 # Reference:
  - https://www.bairesdev.com/blog/best-java-machine-learning-libraries/
  - https://www.infoworld.com/article/3697151/build-a-java-application-to-talk-to-chatgpt.html
+ - Spring-ai
+   - https://docs.spring.io/spring-ai/reference/concepts.html
+   - code reference: https://github.com/eugenp/tutorials/tree/master/spring-ai
+   

@@ -121,3 +121,7 @@ Open AI Playground vs ChatGPT: https://www.lifewire.com/openai-playground-vs-cha
    - https://firstfinger.in/chatgpt-character-limit/
    - Prompt Engineering:
      - https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api 
+ - .arff datasets: https://github.com/renatopp/arff-datasets
+   - https://github.com/renatopp/arff-datasets/blob/master/classification/breast.cancer.arff
+ - Interesting Python Libraries
+   - Self driving cars: https://github.com/commaai/openpilot, https://github.com/flowdriveai/flowpilot

@@ -45,7 +45,8 @@ public class GptUtils {
 				CloseableHttpResponse response = httpClient.execute(post)) {
 
 			HttpEntity resEntity = response.getEntity();
-			log.info(response.getEntity().toString());
+			log.info(resEntity.toString());
+			
 			String resJsonString = new String(resEntity.getContent().readAllBytes(), StandardCharsets.UTF_8);
 			JSONObject resJson = new JSONObject(resJsonString);
 			log.info(resJson.toString());
@@ -102,7 +103,7 @@ public class GptUtils {
 	}
 
 	public static String sendQueryToAzureOpenAI(String promptText, String endpoint, String apiKey, String model) {
-		
+		log.info("prompt created: {} for endpoint: {}", promptText, endpoint);
 		// Rest Call
         HttpClient client = HttpClient.newHttpClient();
         String body = new Gson().toJson(InputBody.builder()
@@ -116,33 +117,33 @@ public class GptUtils {
                 .POST(HttpRequest.BodyPublishers.ofString(body))
                 .build();
         HttpResponse<String> response;
-		try {
-			response = client.send(request, HttpResponse.BodyHandlers.ofString());
-		
 
-        // Response Mapping
-        JSONObject jsonObject = new JSONObject(response.body());
-        log.info(jsonObject.toString());
-        
-        int code;
-        String responseText="";
-        
-        if(StringUtils.isNotBlank(jsonObject.optString("error"))) {
-        	// Error Scenario
-        	code =  jsonObject.getJSONObject("error").getInt("code");
-        	responseText = (String) jsonObject.getJSONObject("error").get("message");
-        } else {
-        	// Success Scenario
-        	code = response.statusCode();
-        	JSONArray peopleArray = jsonObject.getJSONArray("choices");
-            responseText = peopleArray.getJSONObject(0).getString("text");
-            return responseText;
-        }    
-		
+        try {
+			response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+			// Response Mapping
+			JSONObject jsonObject = new JSONObject(response.body());
+			log.info(jsonObject.toString());
+
+//			int code;
+			String responseText = "";
+
+			if (StringUtils.isNotBlank(jsonObject.optString("error"))) {
+				// Error Scenario
+//				code = jsonObject.getJSONObject("error").getInt("code");
+				responseText = (String) jsonObject.getJSONObject("error").get("message");
+			} else {
+				// Success Scenario
+//				code = response.statusCode();
+				JSONArray peopleArray = jsonObject.getJSONArray("choices");
+				responseText = peopleArray.getJSONObject(0).getString("text");
+			}
+
+			return responseText;
 		} catch (IOException | InterruptedException e) {
-			e.printStackTrace();
+			log.error("Error sending request: {}", e.getMessage());
+			return "Error: " + e.getMessage();
 		}
 		
-		return null;
 	}
 }

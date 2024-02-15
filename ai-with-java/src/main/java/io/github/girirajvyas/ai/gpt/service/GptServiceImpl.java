@@ -27,12 +27,14 @@ public class GptServiceImpl implements GptService {
 	private String azureModel;
 
 	@Override
-	public String getAccounts(String promptText) {
-		return GptUtils.sendQueryToOpenAI(promptText, endpoint, apiKey, model);
+	public String getInterviewQuestions(String promptText) {
+		//return GptUtils.sendQueryToAzureOpenAI(promptText, azureEndpoint, azureApiKey, azureModel);
+		return GptUtils.sendQueryToOpenAI(promptText, azureEndpoint, azureApiKey, azureModel);
 	}
 
 	@Override
-	public String getInterviewQuestions(String promptText) {
-		return GptUtils.sendQueryToAzureOpenAI(promptText, azureEndpoint, azureApiKey, azureModel);
+	public String searchPrompt(String promptText) {
+//		return GptUtils.sendQueryToAzureOpenAI(promptText, azureEndpoint, azureApiKey, azureModel);
+		return GptUtils.sendQueryToOpenAI(promptText, azureEndpoint, azureApiKey, azureModel);
 	}
 }
