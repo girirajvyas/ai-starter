@@ -82,7 +82,7 @@ Note: "Not Available" indicates the data is not publicly available or could not 
 
 Note: "Not Available" indicates the data is not publicly available or could not be found.
 
-### Equivalent Python libraries in Java 
+### Python Equivalent libraries in Java 
 
 | Python Library | Python Library Description | Equivalent Java Library | Java Library Description | Production Use Case | Latest version and release date |
 | --- | --- | --- | --- | --- | --- |
@@ -147,9 +147,13 @@ Remember to replace `"path/to/your/excel/file.xlsx"` with the actual file path y
 I hope this helps you get started with Excel read/write operations in Java! Let me know if you have any further questions.
  
 # Reference:
+ - https://www.baeldung.com/java-ai
  - https://www.bairesdev.com/blog/best-java-machine-learning-libraries/
  - https://www.infoworld.com/article/3697151/build-a-java-application-to-talk-to-chatgpt.html
  - Spring-ai
    - https://docs.spring.io/spring-ai/reference/concepts.html
-   - code reference: https://github.com/eugenp/tutorials/tree/master/spring-ai
+   - code references:
+     - https://github.com/eugenp/tutorials/tree/master/spring-ai
+     - https://www.unlogged.io/post/all-you-need-to-know-about-spring-ai
+     
    

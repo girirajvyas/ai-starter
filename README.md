@@ -87,6 +87,10 @@ It's worth noting that large language models like GPT-3 can exhibit generative c
 ### Sample 3:
  - We are trying to create a travel booking application for our client and want to propose the detailed architecture along with the code for the same, Can you help in generating high level Epics, features and stories followed by architecture and actual code in java using spring boot
 
+## RAG
+Retrieval augmented generation, or RAG, is an architectural approach that can improve the efficacy of large language model (LLM) applications by leveraging custom data. This is done by retrieving data/documents relevant to a question or task and providing them as context for the LLM.
+
+
 ## Different tools and its versions
 
 ### ChatGPT
@@ -115,13 +119,37 @@ Open AI Playground vs ChatGPT: https://www.lifewire.com/openai-playground-vs-cha
  - AI
    - https://serokell.io/blog/ai-ml-dl-difference   
  - Generative AI
-   - https://platform.openai.com/examples
-   - https://platform.openai.com/docs/libraries/community-libraries
-     - https://github.com/TheoKanning/openai-java
-   - https://firstfinger.in/chatgpt-character-limit/
-   - Prompt Engineering:
+   - OpenAI:
+     - https://platform.openai.com/examples
+     - https://platform.openai.com/docs/libraries/community-libraries
+       - https://github.com/TheoKanning/openai-java
+     - https://firstfinger.in/chatgpt-character-limit/
+   - Google:
+     - https://ai.google/discover/foundation-models/
+	 - 
+   - Amazon:
+     - https://aws.amazon.com/bedrock/
+   - Prompt Engineering Best Practices:
      - https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api 
- - .arff datasets: https://github.com/renatopp/arff-datasets
+	 - https://platform.openai.com/docs/guides/prompt-engineering/strategy-write-clear-instructions
+	 - Overview: https://www.slideshare.net/webmaxru/prompt-engineering-an-art-a-science-or-your-next-job-title-261027324
+ - ML
+   - https://www.baeldung.com/cs/neural-net-advantages-disadvantages
+ - RAG:
+   - https://lmy.medium.com/comparing-langchain-and-llamaindex-with-4-tasks-2970140edf33
+ - Datasets (.arff format): https://github.com/renatopp/arff-datasets
    - https://github.com/renatopp/arff-datasets/blob/master/classification/breast.cancer.arff
  - Interesting Python Libraries
-   - Self driving cars: https://github.com/commaai/openpilot, https://github.com/flowdriveai/flowpilot
+   - Self driving cars: 
+     - https://github.com/commaai/openpilot
+	 - https://github.com/flowdriveai/flowpilot
+ - EPAM DIAL:
+   - Official site:
+     - https://epam-rail.com/
+     - https://epam-rail.com/about-us
+   - APIs Access:
+     - https://epam-rail.com/dial_api
+   - code base:
+     - https://github.com/epam?q=ai-dial&type=all&language=&sort=
+   - Info/News:
+     - https://www.epam.com/about/newsroom/press-releases/2023/epam-releases-ai-powered-dial-platform-for-open-source-helping-companies-quickly-advance-generative-ai-and-llm-driven-solutions
