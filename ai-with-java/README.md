@@ -121,7 +121,7 @@ Note: "Not Available" indicates the data is not publicly available or could not 
 
 ### Account creation
  - Create account with Chat GPT
-	- Emailid
+	- Email id
 	- Mobile number verification
 	- Done
 
@@ -152,8 +152,10 @@ I hope this helps you get started with Excel read/write operations in Java! Let 
  - https://www.infoworld.com/article/3697151/build-a-java-application-to-talk-to-chatgpt.html
  - Spring-ai
    - https://docs.spring.io/spring-ai/reference/concepts.html
+   - https://medium.com/dandelion-tutorials/spring-ai-with-ollama-and-metas-llama2-764dcde77bf9
    - code references:
      - https://github.com/eugenp/tutorials/tree/master/spring-ai
      - https://www.unlogged.io/post/all-you-need-to-know-about-spring-ai
-     
+ - Langchain for Java
+   - https://www.baeldung.com/java-langchain-basics
    

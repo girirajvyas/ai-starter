@@ -1,0 +1,96 @@
+
+
+PROFESSIONAL SUMMARY
+A Software Professional having over 11+ years of experience in IT industry and has worked on Java/JEE platform extensively. I had also worked for 1 year at client location in India. I have worked in various phases of SDLC such as Requirements and Analysis, Design, Developement, Testing and Delivery. Domain knowledge includes Telecom and finance.Have good knowledge in Agile delivery framework as well.
+SKILLS
+
+Technologies :- 	Core Java,Spring - SpringMVC,SpringAOP,SpringBoot,SpringDataJPA,Hibernate,SOAP Webservice,Jenkins,Maven,Agile and Openshift.
+Tools:-	Eclipse, IntelliJ, IBM RAD, SQL Developer, IBM DB2 client, POSTMAN, SOAP-UI.
+Database:-		IBM DB2, Oracle DB,MySql, Kafka
+Other:-		Begineer’s skill level in Python and Hadoop
+Operating System:-	Windows, Unix
+Education:
+
+B.E. (I.T.) from Pune University. – June2007
+
+H.S.C. from Nasik Board, Maharashtra. – June 2002
+S.S.C. from Nasik Board, Maharashtra. – June 2000
+
+Training and Certification
+Java-J2EE 6 months Training Program from NIIT, Pune, India.
+Sun Certified Java Programmer (SCJP 1.5).
+Big Data/Hadoop training course from ETLHive institute, Pune.
+
+Awards Achievements
+ACE (Accenture Excellenace Award) for the Oct- December 2019 quarter.
+Pat on Back award for Vodafone CPOS project for year 2011.
+
+WORK EXPERIENCE:
+
+Accenture Services Pvt. Ltd.
+Designation: Lead Developer / Team Lead
+Duration: May 2013 to Present
+
+iGATE (PataniComputer)
+Designation: Senior Software Engineer
+Duration:Feb 2011 to May 2013
+
+Smart Wireless private Ltd., Pune
+Designation: Software Engineer
+Duration:Dec 2009 to Jan 2011
+
+Infonox Software Ltd. currently known as TSYS
+Designation: SoftwareAssociate
+Duration: April 2008 to Feb 2009
+Project Details
+
+
+
+Employer 	: Accenture			Title	:OSS NGxDSL for HT
+Client	: Hawaii Telecom, USA
+Role         	:Senior Developer
+Duration	:Sep 2015 to May2016
+
+The NG xDSL Bonding Project is an effort to enable higher High speed internet to customers who can only be served via copper lines and not fiber lines. The customer who has broadband connection and serving a basic speed product could demand a high speed product. As client is serving them over a single copper wire it is not possible to accommodate higher speed product on it. So there is a solution proposed in which client is ready to drop a another copper wire to the customer premise and then a pair of copper wire could accommodate higher speed products for broadband connection. There are 2 parts of the solution, one is known as iPlanet which is act as a Inventory of all the logical resources like ports and circuit ids. And second is NetIQ LoopQual which is responsible for looking into the iPlanet inventory to find out if there are enough resources available in order to provide a second copper wire to the customer premises.
+
+Responsibilities:
+Contributed as a independent developer.as rest of the team was in onshore.
+It includes regular interaction with onshore/business people to understand requirements
+
+Technology Stack : Core Java, Spring MVC, Spring security, Spring Data JPA, Oracle DB, 
+Tools :- SVN, Jenkin, IntelliJ, Maven.
+
+
+
+
+
+Employer 	: Accenture			Title	:MSAGS for HT
+Client	: Hawaii Telecom, USA
+Role         	:Senior/Lead Developer
+Duration	:May 2013 to August2015
+
+MSAGS stands for Master Service Address Golden Source. This system was developed to take care of client's business customer's large volumn of addresses. It is possible that single customer may have multiple versions of his/her address. Using MSAGS application, now it is much more easy for our client to find out the most valid form of address for a particular customer. System has provided number of operations like Create Address, Edit Address, Delete single or multiple addresses at a time, import bulk addresses at a time using Excel file, search addresses using any of the address attributes. Other than these, system has provided some admin level of operations like create/update/delete master attributes of the address, create/view status of the batch job etc. 
+
+TechnologyStack–Core Java, Spring MVC, Spring Security, Spring Data JPA, Spring Batch Jobs, SOAP Web Services, Angular JS,Oracle DB.
+
+Responsibilities:
+Analysis of the Requirement design document.
+Prepare DB design and create table, views, indexes.
+Write clean, high-quality code.
+Take care of deployment using Jenkins pipeline.
+Coordinate with onshore team and client business peoples.
+Helpjunior team to perform maintenance and support operations.
+
+
+Employer 	:iGate-Patani Computer			Title	:UPSS for Vodafone
+Client	: Vodafone India
+Role         	:SeniorSoftware Developer
+Duration	:June 2012 to April2013
+
+
+
+
+
+
+Date:				
+Place:	Pune					Black Widow

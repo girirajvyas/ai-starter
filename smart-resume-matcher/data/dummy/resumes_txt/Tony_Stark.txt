@@ -1,0 +1,389 @@
+ 
+
+Tony Stark 
+Pune, India 
+Email – tony.stark85@gmail.com 
+Mobile – 9899999999 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+PROFESSIONAL SUMMARY 
+A Software Professional having over 11+ years of experience in IT industry and has 
+worked on Java/JEE platform extensively. I had also worked for 1 year at client 
+location in India. I have worked in various phases of SDLC such as Requirements and 
+Analysis, Design, Developement, Testing and Delivery. Domain knowledge includes 
+Telecom and finance.Have good knowledge in Agile delivery framework as well. 
+
+SKILLS 
+ 
+Technologies :-  
+
+Tools:- 
+
+Java,Spring 
+
+Core 
+SpringMVC,SpringAOP,SpringBoot,SpringDataJPA,Hibernate,SO
+AP Webservice,Jenkins,Maven,Agile and Openshift. 
+Eclipse,  IntelliJ,  IBM  RAD,  SQL  Developer,  IBM  DB2  client, 
+POSTMAN, SOAP-UI. 
+IBM DB2, Oracle DB,MySql, Kafka 
+Begineer’s skill level in Python and Hadoop 
+
+- 
+
+Database:- 
+Other:- 
+Operating System:-  Windows, Unix 
+
+ 
+ 
+
+Education: 
+ 
+B.E. (I.T.) from Pune University. – June2007 
+ 
+
+•  H.S.C. from Nasik Board, Maharashtra. – June 2002 
+•  S.S.C. from Nasik Board, Maharashtra. – June 2000 
+
+ 
+Training and Certification 
+
+Java-J2EE 6 months Training Program from NIIT, Pune, India. 
+
+• 
+•  Sun Certified Java Programmer (SCJP 1.5). 
+•  Big Data/Hadoop training course from ETLHive institute, Pune. 
+
+ 
+Awards Achievements 
+
+•  ACE (Accenture Excellenace Award) for the Oct- December 2019 quarter. 
+•  Pat on Back award for Vodafone CPOS project for year 2011. 
+
+ 
+
+WORK EXPERIENCE: 
+ 
+Accenture Services Pvt. Ltd. 
+Designation: Lead Developer / Team Lead 
+Duration: May 2013 to Present 
+ 
+iGATE (PataniComputer) 
+Designation: Senior Software Engineer 
+Duration:Feb 2011 to May 2013 
+ 
+Smart Wireless private Ltd., Pune 
+Designation: Software Engineer 
+Duration:Dec 2009 to Jan 2011 
+ 
+Infonox Software Ltd. currently known as TSYS 
+Designation: SoftwareAssociate 
+Duration: April 2008 to Feb 2009 
+
+ 
+
+ 
+
+Title 
+
+:ICR 
+
+: Accenture 
+
+:Lead Developer/Team Lead 
+:May 2016Till Present 
+
+Project Details 
+ 
+Employer  
+Client  : Anthem Healthcare,USA 
+Role          
+Duration 
+ 
+Project Description: 
+ICR or Interactive Care Reviewer is a platform for health insurance client to setup a patient 
+case paper, submit it to authorized agency for validation and catch and reflect the decisions 
+for an every case created on its platform.  
+Initially Accenture a developed a monolith web applicationsonly. Later our team transformed it 
+by breking it into multiple spring boot micro services. Monolith web application then has basic 
+functionalitiessuch as setup/create patient case, search patient case, delete caseetc. whereas 
+each of the micro service built with specific business process/functionality keeping in mind the 
+client’s healthcare business. 
+ 
+Responsibilities: 
+
+• 
+
+Preparing technical design documents with few UML diagrams like class diag, sequence 
+diag etc. 
+Taking part in Spring planning, Spring Review meetings. 
+
+• 
+●  Write clean, high-quality code. 
+●  Coordinate with onshore team and client business peoples. 
+●  Handle a scrum team to perform end to end delivery. 
+
+ 
+
+ 
+
+ 
+
+Title 
+
+: Accenture 
+
+:OSS NGxDSL for HT 
+
+Technologies used in project:  
+JDK 1.8, Spring MVC, Spring AOP, Spring Boot, Spring Data JPAand SOAP web services, IBM 
+db2 and mongo DB. 
+Tools - GIT, bitbucket, Jira,docker, Openshift, Eclipse, Spring Tool Suite. 
+ 
+ 
+Employer  
+Client  : Hawaii Telecom, USA 
+:Senior Developer 
+Role          
+Duration 
+:Sep 2015 to May2016 
+ 
+The NG xDSL Bonding Project is an effort to enable higher High speed internet to customers 
+who can only be served via copper lines and not fiber lines. The customer who has broadband 
+connection and serving a basic speed product could demand a high speed product. As client is 
+serving them over a single copper wire it is not possible to accommodate higher speed product 
+on it. So there is a solution proposed in which client is ready to drop a another copper wire to 
+the  customer  premise  and  then  a  pair  of  copper  wire  could  accommodate  higher  speed 
+products for broadband connection. There are 2 parts of the solution, one is known as iPlanet 
+which is act as a Inventory of all the logical resources like ports and circuit ids. And second is 
+NetIQ LoopQual which is responsible for looking into the iPlanet inventory to find out if there 
+are  enough  resources  available  in  order  to  provide  a  second  copper  wire  to  the  customer 
+premises. 
+ 
+Responsibilities: 
+
+•  Contributed as a independent developer.as rest of the team was in onshore. 
+• 
+
+interaction  with  onshore/business  people  to  understand 
+
+includes  regular 
+
+It 
+requirements 
+ 
+
+Technology Stack : Core Java, Spring MVC, Spring security, Spring Data JPA, Oracle DB,  
+Tools :- SVN, Jenkin, IntelliJ, Maven. 
+ 
+ 
+ 
+
+ 
+
+ 
+
+Title 
+
+: Accenture 
+
+:MSAGS for HT 
+
+:Senior/Lead Developer 
+:May 2013 to August2015 
+
+ 
+ 
+Employer  
+Client  : Hawaii Telecom, USA 
+Role          
+Duration 
+ 
+MSAGS stands for Master Service Address Golden Source. This system was developed to take 
+care  of  client's  business  customer's  large  volumn  of  addresses.  It  is  possible  that  single 
+customer may have multiple versions of his/her address. Using MSAGS application, now it is 
+much  more  easy  for  our  client  to  find  out  the  most  valid  form  of  address  for  a  particular 
+customer.  System  has  provided  number  of  operations  like  Create  Address,  Edit  Address, 
+Delete single or multiple addresses at a time, import bulk addresses at a time using Excel file, 
+search addresses using any of the address attributes. Other than these, system has provided 
+some  admin  level  of  operations  like  create/update/delete  master  attributes  of  the  address, 
+create/view status of the batch job etc.  
+ 
+TechnologyStack–Core  Java,  Spring  MVC,  Spring  Security,  Spring  Data  JPA,  Spring  Batch 
+Jobs, SOAP Web Services, Angular JS,Oracle DB. 
+ 
+Responsibilities: 
+
+Prepare DB design and create table, views, indexes. 
+
+•  Analysis of the Requirement design document. 
+• 
+●  Write clean, high-quality code. 
+●  Take care of deployment using Jenkins pipeline. 
+●  Coordinate with onshore team and client business peoples. 
+●  Helpjunior team to perform maintenance and support operations. 
+
+ 
+ 
+Employer  
+Client  : Vodafone India 
+Role          
+Duration 
+ 
+
+:SeniorSoftware Developer 
+:June 2012 to April2013 
+
+:iGate-Patani Computer 
+
+ 
+
+ 
+
+Title 
+
+:UPSS for Vodafone 
+
+UPSS  is  developed  to  take  care  of  prepaid  telecom business  of  Vodafone.  It  is  come  under  BSS(Business 
+ 
+Support  System)  application  category.  It  is  also  unified  in  nature  which  has  replaced  discrete  prepaid 
+business  solutions  of  different  vendors  which  were  later  acquired  by  Vodafone.  This  application  has 
+developed  in  various  modules  such  as  customer  management,  provisioning,  mediation,  promotion,  billing 
+and  reports.  It  is  mainly used  SOA arhitecture  (SOAP  based Web Services), FTP protocol  to  communicate 
+with the Intelligent networks.  
+ 
+Technology Stack - Core java, JSP, Servlets, Struts, Hibernate, SOAP Webservices, EJB, Oracle DB.  
+Tools :- RAD, Webspehre, SVN 
+ 
+Employer  
+Client  : Vodafone India 
+Role          
+Duration 
+
+:Software Developer 
+:Feb 2011 to April2012 
+
+:iGate-Patani Computer 
+
+:cPOS for Vodafone 
+
+Title 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Title 
+
+:Smart Wireless Pvt Ltd 
+
+:PacsoftMessanging Application 
+
+:Software Developer 
+:Dec 2009 to Jan2011 
+
+This project is for creating centralized point of sale solution for a leading telecom client Vodafone. cPOS is a 
+ 
+centralised  solution  which  is  replacing  existing  mutiple  disparate  POS  solutions  based  on  different 
+technology. The solution (application) is based on SOA architecture where different parts of functionality has 
+implemented as services and process implementaion is done using process server. The solution is divided 
+into  functional  modules as  inventory,  sales and Customer  Registration  System(CRS) and Prepaid-Postpaid 
+sim activation.  
+ 
+Technology  Stack  -  Core  Java,  JSP,  Servlets,  Struts,  Spring  Batch  Job,  Spring  JDBC,  JMS,  EJB,  SOAP 
+webservices and oracle DB. 
+Role:- Requirement analysis and developement of new CR(change request), new functionality. Developing 
+the  required  DB  structure  for  the  new  developement/CR.  Unit  testing  of  the  developed  functionality. 
+Involving in bug fixes for the issues reported. 
+ 
+ 
+ 
+ 
+Employer  
+Client  : Pacsoft India 
+Role          
+Duration 
+ 
+This system is developed to accomplish the complete messaging plateform for the client. Main project client 
+has many numbers of agents in the various states of India. With  user interface, every agent user can use 
+single  sms  and  bulk  sms  feature  of  the  system.  Application  also  has  provided  the  new  agent  addition, 
+modification  and  deletion  functionality.  Agents  can  maintain/recharge  his/her  account  using  'My  Account' 
+feature.  For  tracking  the  business  different  types  of  reports  are  provided  to  the  clients.  Dashboard  is 
+developed to monitor the SMS traffic. Front end is developed using flex to generate rich GUI. All business 
+logic is developed using java web services and these Web services are developed using Apache Axis tool. 
+ 
+Technology Stack - Core Java, JSP, Servlets, Struts, SOAP web services,Ajax, SQL, Hibernate, MySQL DB.  
+ 
+Employer  
+Client  : Pacsoft India 
+Role          
+Duration 
+ 
+This project is for creating a Point Of Sale solution for a leading bank in USA. This bank has provided it's 
+kiosk in various malls and other crowded areas. The solution is divided into 3 main functional modules as 
+sales, inventory and CRS. This system has various functionalities like create sale receipt, customer receipt, 
+payment by using different cards, generation of invoice and other finance domain related things. In admin 
+module  we  have provides  different  features  to  control  the application by the  client  such as managing the 
+personal details of all employees, updation, deletion of the details.  
+ 
+Technology Stack - Core java, Struts, JSP, Servlets, Ajax, Oracle DB and Tomcat.  
+
+:Software Developer 
+:April 2008 to Jan2009 
+
+:Infonox Software Pvt Ltd 
+
+:Desktop One 
+
+Title 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+Date: 
+Place:  Pune 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+Tony Stark 
+
+
