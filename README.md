@@ -63,6 +63,28 @@ So, while large language models are a subset of generative AI models specificall
 
 It's worth noting that large language models like GPT-3 can exhibit generative capabilities within the domain of language. They can generate coherent and contextually relevant text that resembles human writing. However, generative AI as a whole includes a wider range of techniques and applications beyond language generation.
 
+## How to create LLMs
+
+Creating a large language model such as OpenAI's GPT-3 involves several steps. Here's a high-level overview:
+
+1. **Data Preparation**: The first step is gathering and preparing the data. Language models are trained on large amounts of textual data. The data must be diverse and representative of the various topics and styles the model will encounter once deployed. The data input is usually a large corpus of text from the internet.
+
+2. **Preprocessing**: Once collected, the data is preprocessed. This might include cleaning (removing irrelevant features, formatting uniformity, etc.), tokenization (breaking down the text into chunks, such as words or phrases), and encoding (converting textual information into numerical representation).
+
+3. **Model Architecture Design**: Choose an appropriate model architecture, such as Transformer based models like GPT-3, BERT, etc.
+
+4. **Training the Model**: This involves feeding your preprocessed data through the model so it can learn the relationships between words, the syntax, grammar, and some context from the language data it was trained on. This process involves iterating over a cost function using an optimization algorithm such as Adam (commonly used in large-scale language models) to minimize the prediction error.
+
+5. **Evaluation and Tuning**: After the model is trained, it's tested on unseen data. This is done to evaluate how well it has learned and can generalize from the training data. If performance needs improving, hyperparameters (like learning rate, batch size, number of layers, etc.) will need tuning, then the model is trained again.
+
+6. **Fine-Tuning**: The base language model can be fine-tuned on specific tasks to make it more useful. This process involves continued training on a more specific dataset related to the task you want the model to perform.
+
+7. **Deployment**: Once you're satisfied with the performance of the model, it's deployed to serve real-world requests.
+
+8. **Monitoring**: After deployment, the model must be constantly reviewed and monitored to ensure it's working as expected.
+
+Remember that creating large language models require substantial computational resources and expertise in machine learning and deep learning. They are usually trained on large-scale distributed GPU clusters.
+
 ## Different Application creation
  - Consume ChatGPT APIs 
  - Web scraper 
